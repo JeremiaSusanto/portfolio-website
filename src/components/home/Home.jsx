@@ -1,9 +1,9 @@
-import React from 'react';
-import './home.css';
-import Me from '../../assets/profile.jpg';
-import HeaderSocials from './HeaderSocials';
-import ScrollDown from './ScrollDown';
-import Shapes from './Shapes';
+import React from "react";
+import "./home.css";
+import Me from "../../assets/profile.jpg";
+import HeaderSocials from "./HeaderSocials";
+import ScrollDown from "./ScrollDown";
+import Shapes from "./Shapes";
 
 const Home = () => {
   return (
@@ -15,7 +15,9 @@ const Home = () => {
 
         <HeaderSocials />
 
-        <a href="#contact" className="btn">Contact Me</a>
+        <a href="#contact" className="btn">
+          Contact Me
+        </a>
         <ScrollDown />
       </div>
 

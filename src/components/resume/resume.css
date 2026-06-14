@@ -14,7 +14,7 @@
     top: 0;
     height: 100%;
     width: 2px;
-    background-color: var(--first-color);
+    background: linear-gradient(180deg, var(--first-color) 0%, var(--first-color-lighter) 100%);
 }
 
 .timeline__item {
@@ -31,13 +31,15 @@
     height: 1rem;
     border: 2px solid var(--first-color);
     border-radius: 50%;
-    background-color: var(--body-color);
+    background-color: var(--container-color);
     transition: all 0.3s ease;
+    box-shadow: 0 0 0 4px var(--first-color-lighter);
 }
 
 .timeline__item:hover .circle__dot {
     background-color: var(--first-color);
-    transform: scale(1.2);
+    transform: scale(1.25);
+    box-shadow: 0 0 0 6px var(--first-color-lighter);
 }
 
 .timeline__title {
@@ -63,10 +65,10 @@
     font-weight: var(--font-medium);
     margin-bottom: 0.875rem;
     display: inline-block;
-    padding: 0.375rem 0.875rem;
-    background-color: var(--container-color);
-    border-radius: 1.25rem;
-    box-shadow: var(--shadow);
+    padding: 0.5rem 1rem;
+    background-color: var(--first-color-lighter);
+    border-left: 3px solid var(--first-color);
+    border-radius: 4px;
     letter-spacing: 0.025em;
 }
 

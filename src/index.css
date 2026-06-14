@@ -3,11 +3,15 @@
 
 :root{
   /* hsl(hue, saturation, lightness) */
-  --first-color: hsl(353, 100%,65%);
-  --title-color: hsl(244, 24%, 26%);
-  --text-color: hsl(244, 16%, 43%);
-  --body-color: hsl(220, 70%, 95%);
-  --containe-color: #fff;
+  --first-color: hsl(212, 85%, 45%);
+  --first-color-light: hsl(212, 85%, 55%);
+  --first-color-lighter: hsl(212, 85%, 92%);
+  --title-color: hsl(220, 20%, 15%);
+  --text-color: hsl(220, 12%, 45%);
+  --text-color-light: hsl(220, 8%, 60%);
+  --body-color: #f8f9fb;
+  --container-color: #fff;
+  --border-color: hsl(220, 30%, 90%);
 
   --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   --code-font: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
@@ -25,12 +29,13 @@
   --font-bold: 700;
   --font-extra-bold: 800;
 
-  --shadow: 0px 5px 20px rgb(69 67 96 / 0.1);
+  --shadow-sm: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0px 10px 30px rgba(0, 0, 0, 0.12);
 
-  --border-radius: 20px;  
+  --border-radius: 12px;
 }
 
-/* responsive */
 @media screen and (max-width: 1024px){
   :root{
     --h1-font-size: 2rem;
@@ -103,34 +108,28 @@ img{
 }
 
 .section{
-  padding-top: 7rem;
-  padding-bottom: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
 .section-title{
   font-size: var(--h1-font-size);
-  margin-left: 0.875rem;
+  margin-left: 0;
   font-weight: var(--font-extra-bold);
   position: relative;
-  margin-bottom: 3.75rem;
-  letter-spacing: -0.03em;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
 }
 
 .section-title::before{
-  content: '';
-  background: url(./assets/dots-bg.svg);
-  height: 2.25rem;
-  width: 2.25rem;
-  position: absolute;
-  left: -0.875rem;
-  top: -0.875rem;
+  display: none;
 }
 
 .btn{
   padding: 0.875rem 2.25rem;
   line-height: 1;
-  border-radius: 2rem;
-  box-shadow: 0 0 1px rgb(0 0 0 / 0);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
   border: 1px solid transparent;
   color: #fff;
   display: inline-block;
@@ -143,17 +142,17 @@ img{
 
 @keyframes button-push{
   50%{
-    transform: scale(0.8);
+    transform: scale(0.95);
   }
   100%{
     transform: scale(1);
-  } 
+  }
 }
 
 .btn:hover{
-  animation: button-push 0.3s ease-in-out;
+  background-color: var(--first-color-light);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
 }
 
 /* Typography Utilities */

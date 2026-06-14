@@ -1,16 +1,17 @@
 .services__container {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    column-gap: 1.875rem;
-    row-gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 2.5rem;
 }
 
 .services__card {
     background-color: var(--container-color);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
     padding: 2.5rem 2rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -21,9 +22,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--first-color), hsl(43, 100%, 68%));
+    height: 3px;
+    background: var(--first-color);
     transform: scaleX(0);
+    transform-origin: left;
     transition: transform 0.3s ease;
 }
 
@@ -32,8 +34,9 @@
 }
 
 .services__card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(69, 67, 96, 0.15);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--first-color-lighter);
 }
 
 .services__img {

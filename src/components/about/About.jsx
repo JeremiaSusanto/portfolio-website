@@ -1,6 +1,6 @@
-import React from 'react';
-import './about.css';
-import Image from "../../assets/profile (2).jpg";
+import React from "react";
+import "./about.css";
+import Image from "../../assets/profile2.jpg";
 
 const About = () => {
   return (
@@ -13,15 +13,18 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              I am a Data Science student at Institut Teknologi Sumatera with a passion for programming and data analysis. 
-              Currently pursuing my degree in Data Science, I have hands-on experience in Python, JavaScript, and web development. 
-              I enjoy working on academic projects, web programming, and exploring the intersection of technology and data-driven solutions.
+              I am a Data Science student at Institut Teknologi Sumatera with a
+              passion for programming and data analysis. Currently pursuing my
+              degree in Data Science, I have hands-on experience in Python,
+              JavaScript, and web development. I enjoy working on academic
+              projects, web programming, and exploring the intersection of
+              technology and data-driven solutions.
             </p>
-            <a 
-              href="/documents/CV_Jeremia_Susanto.pdf" 
-              className="btn" 
-              download="CV_Jeremia_Susanto.pdf" 
-              target="_blank" 
+            <a
+              href="/documents/CV_Jeremia_Susanto.pdf"
+              className="btn"
+              download="CV_Jeremia_Susanto.pdf"
+              target="_blank"
               rel="noopener noreferrer"
             >
               Download CV

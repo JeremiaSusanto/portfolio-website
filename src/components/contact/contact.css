@@ -58,29 +58,31 @@
 }
 
 .contact__social-link {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: var(--container-color);
-    color: var(--title-color);
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: var(--first-color-lighter);
+    color: var(--first-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    border: 1px solid var(--first-color);
+    border: 1.5px solid var(--first-color);
     transition: all 0.3s ease;
 }
 
 .contact__social-link:hover {
     background-color: var(--first-color);
     color: #fff;
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
 }
 
 .contact__form {
     background-color: var(--container-color);
     border-radius: var(--border-radius);
-    padding: 2rem;
+    border: 1px solid var(--border-color);
+    padding: 2.5rem;
     box-shadow: var(--shadow);
 }
 
@@ -96,13 +98,13 @@
 
 .form__control {
     width: 100%;
-    border-radius: 0.75rem;
-    border: 2px solid transparent;
+    border-radius: 8px;
+    border: 1.5px solid var(--border-color);
     background-color: var(--body-color);
-    padding: 0.75rem 1.25rem;
+    padding: 0.875rem 1.25rem;
     color: var(--title-color);
     font-weight: var(--font-medium);
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
@@ -110,6 +112,8 @@
 .form__control:focus {
     outline: none;
     border-color: var(--first-color);
+    background-color: var(--container-color);
+    box-shadow: 0 0 0 3px var(--first-color-lighter);
 }
 
 .form__control::placeholder {
